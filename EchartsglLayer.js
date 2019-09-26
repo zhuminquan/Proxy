@@ -1,8 +1,9 @@
-define(['dojo/_base/declare'], function (declare) {
-  return declare('EchartsglLayer', null, {
-    name: 'EchartsglLayer',
-    constructor: function () {
-      console.log('终于进来了')
+define(['dojo/dom'], function(dom) {
+  return {
+    setStyle: function(obj) {
+      obj.style.backgroundColor = 'pink';
+      obj.style.width = '200px';
+      obj.style.height = '200px';
     }
-  })
-})
+  };
+});
